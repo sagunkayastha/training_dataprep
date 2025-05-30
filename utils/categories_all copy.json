@@ -1,0 +1,194 @@
+[
+    // {
+    //     "CategoryCode": "POL",
+    //     "Level": 1,
+    //     "Description": "Pollen",
+    //     "CommonName": null
+    // },
+    // {
+    //     "CategoryCode": "GRA",
+    //     "Level": 2,
+    //     "Description": "Grass",
+    //     "CommonName": null
+    // },
+    // {
+    //     "CategoryCode": "TRE",
+    //     "Level": 2,
+    //     "Description": "Tree",
+    //     "CommonName": null
+    // },
+    // {
+    //     "CategoryCode": "WEE",
+    //     "Level": 2,
+    //     "Description": "Weed/Shrub",
+    //     "CommonName": null
+    // },
+    // {
+    //     "CategoryCode": "MOL",
+    //     "Level": 2,
+    //     "Description": "Mold",
+    //     "CommonName": null
+    // },
+    // {
+    //     "CategoryCode": "OTHPAR",
+    //     "Level": 2,
+    //     "Description": "Other Particulate",
+    //     "CommonName": "Dust"
+    // },
+    // {
+    //     "CategoryCode": "AMB-IVA",
+    //     "Level": 3,
+    //     "Description": "Ambrosia / Iva",
+    //     "CommonName": "Ragweed / Marsh Elder"
+    // },
+    // {
+    //     "CategoryCode": "ART",
+    //     "Level": 3,
+    //     "Description": "Artemisia",
+    //     "CommonName": "Sagebrush / Mugwort"
+    // },
+    // {
+    //     "CategoryCode": "CHE-AMA",
+    //     "Level": 3,
+    //     "Description": "Chenopodium / Amaranthus",
+    //     "CommonName": "Chenopod / Amaranth"
+    // },
+    // {
+    //     "CategoryCode": "PLA",
+    //     "Level": 3,
+    //     "Description": "Plantago",
+    //     "CommonName": null
+    // },
+    // {
+    //     "CategoryCode": "ACE",
+    //     "Level": 3,
+    //     "Description": "Acer",
+    //     "CommonName": "Maple / Box Elder"
+    // },
+    // {
+    //     "CategoryCode": "ALN",
+    //     "Level": 3,
+    //     "Description": "Alnus",
+    //     "CommonName": "Alder"
+    // },
+    // {
+    //     "CategoryCode": "BET",
+    //     "Level": 3,
+    //     "Description": "Betula",
+    //     "CommonName": "Birch"
+    // },
+    // {
+    //     "CategoryCode": "CAR",
+    //     "Level": 3,
+    //     "Description": "Carya",
+    //     "CommonName": "Hickory"
+    // },
+    // {
+    //     "CategoryCode": "CUP",
+    //     "Level": 3,
+    //     "Description": "Cupressaceae",
+    //     "CommonName": "Cedar / Juniper"
+    // },
+    // {
+    //     "CategoryCode": "FRA",
+    //     "Level": 3,
+    //     "Description": "Fraxinus",
+    //     "CommonName": "Ash"
+    // },
+    // {
+    //     "CategoryCode": "MOR",
+    //     "Level": 3,
+    //     "Description": "Morus",
+    //     "CommonName": "Mulberry"
+    // },
+    // {
+    //     "CategoryCode": "OLE",
+    //     "Level": 3,
+    //     "Description": "Olea",
+    //     "CommonName": null
+    // },
+    // {
+    //     "CategoryCode": "PIN",
+    //     "Level": 3,
+    //     "Description": "Pinus",
+    //     "CommonName": "Pine"
+    // },
+    // {
+    //     "CategoryCode": "POP",
+    //     "Level": 3,
+    //     "Description": "Populus",
+    //     "CommonName": "Cottonwood"
+    // },
+    // {
+    //     "CategoryCode": "QUE",
+    //     "Level": 3,
+    //     "Description": "Quercus",
+    //     "CommonName": "Oak"
+    // },
+    // {
+    //     "CategoryCode": "SAL",
+    //     "Level": 3,
+    //     "Description": "Salix",
+    //     "CommonName": "Willow"
+    // },
+    // {
+    //     "CategoryCode": "ULM",
+    //     "Level": 3,
+    //     "Description": "Ulmus",
+    //     "CommonName": "Elm"
+    // },
+    {
+        "CategoryCode": "LOL",
+        "Level": 3,
+        "Description": "Lolium",
+        "CommonName": null
+    },
+    {
+        "CategoryCode": "POA",
+        "Level": 3,
+        "Description": "Poaceae",
+        "CommonName": null
+    },
+    {
+        "CategoryCode": "ALTSP",
+        "Level": 3,
+        "Description": "Alternaria sp",
+        "CommonName": null
+    },
+    {
+        "CategoryCode": "ASCO",
+        "Level": 3,
+        "Description": "Ascospores general",
+        "CommonName": null
+    },
+    {
+        "CategoryCode": "BOTSP",
+        "Level": 3,
+        "Description": "Botrytis sp",
+        "CommonName": null
+    },
+    {
+        "CategoryCode": "OOMY",
+        "Level": 3,
+        "Description": "Class Oomycetes ",
+        "CommonName": null
+    },
+    {
+        "CategoryCode": "POWMIL",
+        "Level": 3,
+        "Description": "Powdery Mildew",
+        "CommonName": null
+    },
+    {
+        "CategoryCode": "RUSURE",
+        "Level": 3,
+        "Description": "Rust urediniospore",
+        "CommonName": null
+    },
+    {
+        "CategoryCode": "SMUT",
+        "Level": 3,
+        "Description": "Ustilaginomycetes a.k.a Smut",
+        "CommonName": null
+    }
+]

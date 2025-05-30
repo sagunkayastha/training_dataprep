@@ -1,0 +1,58 @@
+{
+    "category_code": "PLA",
+    "new_data": true,
+    "VariantCode": "GS2",
+    "window": 24,
+    "min_valid": 16,
+    "samples_per_site": 600,
+    "end_date": "2025-05-20",
+    "paths": {
+        "all_category_path": "utils/categories_all.json",
+        "sites_in_domain_path": "utils/sites_in_domain.csv",
+        "met_path": "utils/Final_met.nc"
+    },
+    "final_columns": [
+        "SiteId",
+        "PPM3",
+        "Date",
+        "local_time",
+        "gust",
+        "acc_precip",
+        "PPM3_daily_avg",
+        "PPM3_daily_max",
+        "wind_speed"
+    ],
+    "directories": {
+        "data_root": "GS_data",
+        "site_data": "site_data",
+        "imputed_data": "site_data_imputed"
+    },
+    "imputation": {
+        "cores": 10,
+        "met_vars": [
+            "gust",
+            "t2m",
+            "u10",
+            "v10",
+            "tp",
+            "r2",
+            "orog",
+            "sdswrf"
+        ],
+        "time_vars": [
+            "hr_sin",
+            "hr_cos",
+            "doy_sin",
+            "doy_cos"
+        ],
+        "random_forest": {
+            "n_estimators": 100,
+            "random_state": 0
+        },
+        "imputer": {
+            "max_iter": 20,
+            "sample_posterior": false,
+            "random_state": 0
+        }
+    }
+}
