@@ -85,3 +85,14 @@ def get_query(site_id, variant_code, interval, category_code):
 # Then run it as before:
 # cursor.execute(query)
 # rows = cursor.fetchall()
+def get_gem_query(site_id, variant_code, interval, category_code):
+    query = f"""
+        DECLARE @SiteId UNIQUEIDENTIFIER = '{site_id}';
+        DECLARE @VariantCode NVARCHAR(12) = '{variant_code}';
+        DECLARE @CategoryCode NVARCHAR(50) = '{category_code}';
+
+        SELECT * FROM GetGemDailyPredictionTrainingSets(@SiteId, @VariantCode, @CategoryCode)
+        OPTION (MAXRECURSION 0);
+    """
+
+    return query

@@ -60,6 +60,7 @@ class Prepare_Dataset:
                 config = json.load(f)
                 self.config = config
                 self.final_columns = config.get("final_columns", [])
+                self.daily_columns = config.get("daily_columns", [])
 
         except (FileNotFoundError, json.JSONDecodeError) as e:
             print(
@@ -80,7 +81,8 @@ class Prepare_Dataset:
             "&Connection+Timeout=30"
             "&Encrypt=yes"
         )
-
+        # print(conn_str)
+        # exit()
         return conn_str
 
     def get_sites_in_domain(self):
@@ -140,8 +142,9 @@ class Prepare_Dataset:
         clean_data_path = os.path.join(
             self.category_dir, f"clean_data_{self.category}.csv"
         )
+
         print("Combining met and clean data")
-        self.met_combiner.process_data(clean_data_path, self.final_columns)
+        self.met_combiner.process_data(clean_data_path, self.daily_columns)
 
 
 if __name__ == "__main__":

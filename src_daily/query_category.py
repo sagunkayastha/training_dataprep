@@ -46,7 +46,8 @@ class CategoryDataFetcher:
         """Fetch category data for all sites"""
         print("\nProcessing data for each site...")
         all_data = []
-
+        category_dir = os.path.join(self.training_data_dir, self.category_code, "raw")
+        os.makedirs(category_dir, exist_ok=True)
         for site_id in tqdm(self.site_df["Id"], desc="Processing sites"):
             # query = f"""
             # SELECT *
@@ -90,6 +91,8 @@ class CategoryDataFetcher:
             )
 
             df = pd.read_sql(query, self.engine)
+            if len(df) < 10:
+                continue
             if not df.empty:
                 if site_id in site_timezones["Id"].values:
                     site_timezone = site_timezones[site_timezones["Id"] == site_id][
@@ -98,9 +101,10 @@ class CategoryDataFetcher:
                     df["Timezone"] = site_timezone
                 else:
                     df["Timezone"] = None
-                all_data.append(df)
-
-        return all_data
+                # all_data.append(df)
+                print("saving")
+                df.to_csv(os.path.join(category_dir, f"{site_id}.csv"), index=False)
+        # return all_data
 
     def process_and_save_data(self, all_data):
         """Process and save the fetched data"""
@@ -138,7 +142,8 @@ class CategoryDataFetcher:
 
             site_timezones = self.get_site_timezones()
             all_data = self.fetch_category_data(site_timezones)
-            category_df = self.process_and_save_data(all_data)
+            # category_df = self.process_and_save_data(all_data)
+            category_df = 0
 
         finally:
             self.close_connection()

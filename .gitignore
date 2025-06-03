@@ -2,3 +2,9 @@ data/*
 GS_data/*
 utils/Final_met.nc
 .env
+*.nc
+__pycache__/*
+daily_data/*
+*.zip
+*.pyc
+daily_data_0/*

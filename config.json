@@ -1,10 +1,11 @@
 {
-    "category_code": "PLA",
-    "new_data": true,
+    "category_code": "CHE-AMA",
+    "new_data": false,
     "VariantCode": "GS2",
+    "interval": "day",
     "window": 24,
     "min_valid": 16,
-    "samples_per_site": 600,
+    "samples_per_site": 50,
     "end_date": "2025-05-20",
     "paths": {
         "all_category_path": "utils/categories_all.json",
@@ -22,8 +23,20 @@
         "PPM3_daily_max",
         "wind_speed"
     ],
+    "daily_columns": [
+        "SiteId",
+        "PPM3",
+        "Date",
+        "local_time",
+        "PPM3_daily_avg",
+        "PPM3_daily_max",
+        "wind_speed_daily_avg",
+        "wind_speed_daily_max",
+        "acc_precip_daily_avg",
+        "acc_precip_daily_max"
+    ],
     "directories": {
-        "data_root": "GS_data",
+        "data_root": "daily_data_0",
         "site_data": "site_data",
         "imputed_data": "site_data_imputed"
     },
